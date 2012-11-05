@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+<meta charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="style.css" /> 
+<script type="text/javascript" src="jquery.min.js"></script> 
+<script type="text/javascript" src="nico_instance-min.js"></script> 
+<script type="text/javascript" src="i18n.js"></script> 
+</head>
+<body onload="gettingStart();">
+<!--div id="current" style="width: 160px">
+<div id="temp"></div>
+<div id="detail"></div></div-->
+	<div id="content">
+		<div id="ctn_search">
+			<div style="float:left;margin-top:-5px;">
+				<ul id="jsddm">
+					<li id="jsddmli"><a href="#"><span id="jsddm_span">人氣標籤<span></a>
+						<ul>
+						</ul>
+					</li>
+				</ul>			
+			</div>
+			<br />
+			<div id="header">Nico Instant</div>
+			<table id="tba">
+				<tr>
+					<td id="kw" selectd="on" onClick="javascript:changeSearch('kw');">關鍵字</td>
+					<td id="tag" selectd="off" onClick="javascript:changeSearch('tag');">標籤</td>
+					<!--td id="mylist" selectd="off" onClick="javascript:changeSearch('mylist');">MyList</td-->
+				</tr>
+			</table>
+			<input type="text" id="search" size="30" value="" /><br />
+			<form name="sort">
+				<select id="opt_list" name="sort" onchange="">
+					<option id="new_comment" value="sort=n&amp;order=d" sort="n" order="d" selected="">最新評論</option>
+					<option id="old_comment" value="sort=n&amp;order=a" sort="n" order="a">最舊評論</option>
+					<option id="most_play" value="sort=v&amp;order=d" sort="v" order="d">播放次數最多</option>
+					<option id="lest_play" value="sort=v&amp;order=a" sort="v" order="a">播放次數最少</option>
+					<option id="most_comment" value="sort=r&amp;order=d" sort="r" order="d">評論數最多</option>
+					<option id="lest_comment" value="sort=r&amp;order=a" sort="r" order="a">評論數最少</option>
+					<option id="new_update" value="sort=f&amp;order=d" sort="f" order="d">投稿日最新</option>
+					<option id="old_update" value="sort=f&amp;order=a" sort="f" order="a">投稿日最舊</option>
+					<option id="most_mylist" value="sort=m&amp;order=d" sort="m" order="d">MyList數最多</option>
+					<option id="lest_mylist" value="sort=m&amp;order=a" sort="m" order="a">MyList數最少</option>
+					<option id="long_vtime" value="sort=l&amp;order=d" sort="l" order="d">影片時間最長</option>
+					<option id="short_vtime" value="sort=l&amp;order=a" sort="l" order="a">影片時間最短</option>
+				</select>
+			</form>
+			<p><a href="#" onClick="javascript:openURL('popup');" id="open2tab">open this page into new tab</a></p>
+		</div>
+	</div>
+
+<div id="result_text">search result:</div>
+<div id="loading"><img src="images/loading9.gif"></img><br /></div>
+</div>
+	<table id="result_table">
+		<thead>
+			<tr>
+				<td style="width:130px;"></td>
+				<td style="width:330px;"></td>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</body> 
+</html>

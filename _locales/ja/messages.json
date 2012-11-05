@@ -1,0 +1,137 @@
+{
+	"extName":
+	{
+		"message": "Nico Instant",
+		"description":"擴充套件名稱"
+	},
+	"extDescription":
+	{
+		"message": "ニコ動画即時に検索できる",
+		"description":"擴充套件描述"
+	},
+	"open2tab":
+	{
+		"message": "新しいページに開ける",
+		"description":"把popup開到新的分頁"
+	},
+	"result_text":
+	{
+		"message": "検索結果",
+		"description":"搜尋結果"
+	},	
+	"locale":
+	{
+		"message": "ja",
+		"description":"要傳送給Google Weather API的語系編碼"
+	},
+	"loading":
+	{
+		"message": "読み込み中…",
+		"description":"載入資料時的popup內容"
+	},
+	"popular_tag":
+	{
+		"message": "人気タグ",
+		"description":"人氣標籤"
+	},
+	"kw":
+	{
+		"message": "キーワード",
+		"description":"關鍵字"
+	},
+	"tag":
+	{
+		"message": "タグ",
+		"description":"標籤"
+	},
+	"search_result":
+	{
+		"message": "検索結果",
+		"description":"搜尋結果"
+	},	
+	"new_comment":
+	{
+		"message": "コメントが新しい順",
+		"description":"最新評論"
+	},			
+	"old_comment":
+	{
+		"message": "コメントが古い順",
+		"description":"最舊評論"
+	},	
+	"most_play":
+	{
+		"message": "再生数が多い順",
+		"description":"播放次數最多"
+	},	
+	"lest_play":
+	{
+		"message": "再生数が少ない順",
+		"description":"播放次數最少"
+	},		
+	"most_comment":
+	{
+		"message": "コメント数が多い順",
+		"description":"評論數最多"
+	},			
+	"lest_comment":
+	{
+		"message": "コメント数が少ない順",
+		"description":"評論數最少"
+	},	
+	"new_update":
+	{
+		"message": "投稿日時が新しい順",
+		"description":"投稿日最新"
+	},	
+	"old_update":
+	{
+		"message": "投稿日時が古い順",
+		"description":"投稿日最舊"
+	},		
+	"most_mylist":
+	{
+		"message": "マイリスト数が多い順",
+		"description":"MyList數最多"
+	},			
+	"lest_mylist":
+	{
+		"message": "マイリスト数が少ない順",
+		"description":"MyList數最少"
+	},	
+	"long_vtime":
+	{
+		"message": "再生時間が長い順",
+		"description":"影片時間最長"
+	},	
+	"short_vtime":
+	{
+		"message": "再生時間が短い順",
+		"description":"影片時間最短"
+	},
+	"lang_desc":
+	{
+		"message": "Langを選んで",
+		"description":"選擇語系"
+	},	
+	"save":{
+		"message": "セーブ",
+		"description":"儲存設定"
+	},
+	"option_saved":{
+		"message": "セーブしました",
+		"description":"儲存完成"
+	},
+	"click_here_to_close":{
+		"message": "閉じる",
+		"description":"按此關閉"
+	},
+	"comment_count":{
+		"message": "コメント",
+		"description":"評論次數"
+	},
+	"play_count":{
+		"message": "再生数",
+		"description":"播放次數"
+	}
+}

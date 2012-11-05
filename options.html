@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+<meta charset="utf-8" />
+<!--link type="text/css" rel="stylesheet" href="style.css" /--> 
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+
+function saveOption()
+{
+    if(localStorage["lang"] != $('input[name=lang]:checked').val())
+    {
+        localStorage["lang"] = $('input[name=lang]:checked').val();
+    }
+    $("#status").html(chrome.i18n.getMessage("option_saved")+"<a href='javascript:window.close();'>"+chrome.i18n.getMessage("click_here_to_close")+"</a>");
+}
+
+function restoreOption()
+{
+    var lang=localStorage["lang"];
+    if(!lang)
+    {
+        return;
+    }else
+    {
+        switch(lang)
+        {
+            case "en":
+                $("input[name=lang]")[1].checked=true;
+                break;
+
+            case "zh-TW":
+                $("input[name=lang]")[2].checked=true;
+                break;
+
+            case "ja-JP":
+                $("input[name=lang]")[3].checked=true;
+                break;
+				
+            default:
+                $("input[name=lang]")[0].checked=true;
+        }
+    }
+}
+
+function renderPage()
+{
+    $("#lang_desc").html(chrome.i18n.getMessage("lang_desc"));
+    $("#save").html(chrome.i18n.getMessage("save"));
+}
+</script>
+</head>
+<body onload="restoreOption();renderPage();">
+	<span id="lang_desc" style="font-weight:bold;color:blue;"></span><br />
+	<input type="radio" name="lang" value="default" checked>預設值(default)</input><br />
+	<input type="radio" name="lang" value="en">英文(en)</input><br />
+	<input type="radio" name="lang" value="zh-TW">繁中(zh-TW)</input><br />
+	<input type="radio" name="lang" value="ja-JP">日文(ja-JP)</input><br />
+	<button onclick="saveOption();">
+		<span id="save"></span>
+	</button>
+	<div id="status"></div>
+</body> 
+</html>

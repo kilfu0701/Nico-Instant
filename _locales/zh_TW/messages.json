@@ -1,0 +1,137 @@
+{
+	"extName":
+	{
+		"message": "Nico Instant",
+		"description":"擴充套件名稱"
+	},
+	"extDescription":
+	{
+		"message": "即時搜尋Nico影片",
+		"description":"擴充套件描述"
+	},
+	"open2tab":
+	{
+		"message": "將此畫面開至新分頁",
+		"description":"把popup開到新的分頁"
+	},
+	"result_text":
+	{
+		"message": "搜尋結果",
+		"description":"搜尋結果"
+	},	
+	"locale":
+	{
+		"message": "zh-tw",
+		"description":"要傳送給Google Weather API的語系編碼"
+	},
+	"loading":
+	{
+		"message": "資料載入中...",
+		"description":"載入資料時的popup內容"
+	},
+	"popular_tag":
+	{
+		"message": "人氣標籤",
+		"description":"人氣標籤"
+	},
+	"kw":
+	{
+		"message": "關鍵字",
+		"description":"關鍵字"
+	},
+	"tag":
+	{
+		"message": "標籤",
+		"description":"標籤"
+	},
+	"search_result":
+	{
+		"message": "搜尋結果",
+		"description":"搜尋結果"
+	},	
+	"new_comment":
+	{
+		"message": "最新評論",
+		"description":"最新評論"
+	},			
+	"old_comment":
+	{
+		"message": "最舊評論",
+		"description":"最舊評論"
+	},	
+	"most_play":
+	{
+		"message": "播放次數最多",
+		"description":"播放次數最多"
+	},	
+	"lest_play":
+	{
+		"message": "播放次數最少",
+		"description":"播放次數最少"
+	},		
+	"most_comment":
+	{
+		"message": "評論數最多",
+		"description":"評論數最多"
+	},			
+	"lest_comment":
+	{
+		"message": "評論數最少",
+		"description":"評論數最少"
+	},	
+	"new_update":
+	{
+		"message": "投稿日最新",
+		"description":"投稿日最新"
+	},	
+	"old_update":
+	{
+		"message": "投稿日最舊",
+		"description":"投稿日最舊"
+	},		
+	"most_mylist":
+	{
+		"message": "MyList數最多",
+		"description":"MyList數最多"
+	},			
+	"lest_mylist":
+	{
+		"message": "MyList數最少",
+		"description":"MyList數最少"
+	},	
+	"long_vtime":
+	{
+		"message": "影片時間最長",
+		"description":"影片時間最長"
+	},	
+	"short_vtime":
+	{
+		"message": "影片時間最短",
+		"description":"影片時間最短"
+	},
+	"lang_desc":
+	{
+		"message": "選擇語系",
+		"description":"選擇語系"
+	},	
+	"save":{
+		"message": "儲存",
+		"description":"儲存設定"
+	},
+	"option_saved":{
+		"message": "儲存完成。",
+		"description":"儲存完成"
+	},
+	"click_here_to_close":{
+		"message": "按此關閉",
+		"description":"按此關閉"
+	},
+	"comment_count":{
+		"message": "評論次數",
+		"description":"評論次數"
+	},
+	"play_count":{
+		"message": "播放次數",
+		"description":"播放次數"
+	}
+}

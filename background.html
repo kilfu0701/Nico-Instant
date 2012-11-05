@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript" src="jquery.min.js"></script> 
+<script>
+
+var errorCode;
+var lat;
+var lng;
+var weatherXML;
+var current;
+var locale = chrome.i18n.getMessage("locale");
+
+console.log(localStorage["lang"]);
+if(!localStorage["lang"]){
+	localStorage["lang"] = 'default';
+}else{
+	localStorage["lang"] = 'default';
+}
+
+function getOptionSetting() {
+	return localStorage;
+}
+
+function getCurrentLocation()
+{
+    console.log("getCurrentLocation()");
+    navigator.geolocation.getCurrentPosition(success, error);
+}
+
+chrome.extension.onRequest.addListener( 
+  function(request, sender, sendResponse) { console.log('zzz');
+    console.log(sender.tab ? 
+                "from a content script:" + sender.tab.url : 
+                "from the extension"); 
+    if (request.action == "hello") 
+      sendResponse({farewell: "goodbye"}); 
+    else 
+      sendResponse({}); // snub them. 
+}); 
+
+/* dump objects */
+function mydump(arr,level) {
+    var dumped_text = "";
+    if(!level) level = 0;
+
+    var level_padding = "";
+    for(var j=0;j<level+1;j++) level_padding += "    ";
+
+    if(typeof(arr) == 'object') {  
+        for(var item in arr) {
+            var value = arr[item];
+
+            if(typeof(value) == 'object') { 
+                dumped_text += level_padding + "'" + item + "' ...\n";
+                //dumped_text += mydump(value,level+1);
+            } else {
+                dumped_text += level_padding + "'" + item + "' => \"" + value + "\"\n";
+            }
+        }
+    } else { 
+        dumped_text = "===>"+arr+"<===("+typeof(arr)+")";
+    }
+    return dumped_text;
+}
+</script>
+</head>
+</html>
